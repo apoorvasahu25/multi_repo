@@ -28,7 +28,7 @@ pipeline
             {
                 sh 'echo "multi-node-demo-2"'
                 unstash(name: 'source')
-                sh 'bash script.sh'
+                
             }
         }
     }

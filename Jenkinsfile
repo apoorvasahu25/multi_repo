@@ -13,7 +13,7 @@ pipeline
             {
                 
                 
-                    sh 'echo "multi-node-demo my"'
+                    sh 'echo "multi-node-demo-1"'
                     stash(name: 'source')
                 
                    
@@ -27,9 +27,8 @@ pipeline
             }
             steps 
             {
-                sh 'echo "multi-node-demo"'
+                sh 'echo "multi-node-demo-2"'
                 unstash(name: 'source')
-                sh 'bash script.sh'
             }
         }
     }

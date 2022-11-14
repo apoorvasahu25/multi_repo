@@ -28,8 +28,10 @@ pipeline
             {
                 sh 'echo "multi-node-demo-2"'
                 unstash(name: 'source')
-                sh'pwd'
+               
                 sh'cd /home/jenkins/jenkins-workspace/workspace/multi_repo/first/'
+                 sh'pwd'
+                sh 'chmod 777 script.sh'
                 sh './script.sh'
             }
         }

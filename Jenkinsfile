@@ -31,7 +31,7 @@ pipeline
                 sh'cd'
                 sh'pwd'
                  sh 'chmod 777 /home/jenkins/jenkins-workspace/workspace/multi_repo@2/first/script.sh'
-                sh'cd /home/jenkins/jenkins-workspace/workspace/multi_repo@2/first/script.sh'
+                sh'./home/jenkins/jenkins-workspace/workspace/multi_repo@2/first/script.sh'
                 sh '#./script.sh'
             }
         }

@@ -30,6 +30,7 @@ pipeline
                 unstash(name: 'source')
                 sh'pwd'
                 sh'cd first/'
+                sh'pwd'
                 sh 'chmod 777 script.sh'
                 sh'pwd'
                 sh'./script.sh'

@@ -13,9 +13,7 @@ pipeline
             {
                 sh'git clone https://github.com/apoorvasahu25/multi_repo.git'
                 sh 'echo "multi-node-demo-1"'
-                 stash(name: 'source')
-                
-                   
+                stash(name: 'source')           
             }
         }
         stage('stage 2') 

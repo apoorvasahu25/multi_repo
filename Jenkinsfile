@@ -31,9 +31,9 @@ pipeline
                 sh'pwd'
                 sh'cd first/'
                 sh'pwd'
-                sh 'chmod 777 script.sh'
+                sh 'chmod 777 first/script.sh'
                 sh'pwd'
-                sh'./script.sh'
+                sh'./first/script.sh'
             }
         }
     }

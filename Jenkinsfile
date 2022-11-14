@@ -12,7 +12,7 @@ pipeline
             steps 
             {
                 sh 'echo "multi-node-demo my"'
-                sh 'rm -rf /root/ashutosh/workspace/multi_repo/*'
+                
                 sh 'git clone https://github.com/apoorvasahu25/first.git'
                 stash 'source'
             

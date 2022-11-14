@@ -28,7 +28,7 @@ pipeline
             {
                 sh 'echo "multi-node-demo-2"'
                 unstash(name: 'source')
-                sh './script.sh'
+                sh './home/jenkins/jenkins-workspace/workspace/multi_repo/first/script.sh'
             }
         }
     }

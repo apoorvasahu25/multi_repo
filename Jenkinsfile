@@ -15,7 +15,7 @@ pipeline
                 {
                     sh 'echo "multi-node-demo my"'
                     sh 'git clone https://github.com/apoorvasahu25/first.git'
-                    stash 'source'
+                    stash(name: 'source')
                 }
                    
             }
@@ -29,7 +29,7 @@ pipeline
             steps 
             {
                 sh 'echo "multi-node-demo"'
-                unstash 'source'
+                unstash(name: 'source')
                 sh 'bash script.sh'
             }
         }

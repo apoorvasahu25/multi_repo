@@ -14,7 +14,6 @@ pipeline
                 
                 
                     sh 'echo "multi-node-demo my"'
-                    sh 'git clone https://github.com/apoorvasahu25/first.git'
                     stash(name: 'source')
                 
                    
